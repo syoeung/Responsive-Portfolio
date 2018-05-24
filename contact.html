@@ -1,62 +1,59 @@
 <!DOCTYPE html>
-
-<html lang="en-us">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Lexi Majoue</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
+	<!-- "wrapper" div for sticky footer -->
+	<div class="wrapper">
 
-        <header id="masthead">
-                <div class="container">
-                  <a href="index.html" id="logo">Your Name</a>
-                  <nav>
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                  </nav>
-                </div>
-              </header>
+		<header>
+			<div id="header_block">
+				<div id="header_name_text_block"><h1 id="header_name_text">Steven Yoeung</h1></div>
+				<nav>
+					<div class="nav_link"><p><a href="index.html">About</a></p></div>
+					<div class="nav_vertical_bar"></div>
+					<div class="nav_link"><p><a href="portfolio.html">Portfolio</a></p></div>
+					<div class="nav_vertical_bar"></div>
+					<div class="nav_link"><p><a href="contact.html">Contact</a></p></div>
+				</nav>
+			</div>
+		</header>
 
-        <div id="main-container" class="container">
-            <section class="main-section">
-                    <h1>Contact</h1>
+		<div id="main_block">
+			<section>
+				<h2>Contact</h2>
+				<div id="section_grey_line"></div>
+				
+				<form>
+					<label>Name</label><br/>
+					<input type="text" name="name" value="John Smith"><br/><br/>
 
-                    <form id="contact-form">
-                            <ul>
-                              <li>
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                              </li>
-                              <li>
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                              </li>
-                              <li>
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" required="required"></textarea>
-                              </li>
-                            </ul>
-                            <input type="submit">
-                          </form>
-                    
-                        </section>
-                    
-                      </div>
-                    
-                      <footer>
-                        <div class="container">
-                           Copyright &copy; 
-                        </div>
-                      </footer>
-                    </body>
-                    
-                    </html>
-                    
-                
-            
+					<label>Email</label><br/>
+					<input type="email" name="email" value="example@gmail.com"><br/><br/>
+
+					<label>Message</label><br/>
+					<textarea name="message"></textarea><br/>
+
+					<div id="submit_button"><input type="submit" value="Submit"></div>
+				</form>
+			</section>
+
+			
+		</div>
+	
+		<!-- "push" div for sticky footer -->
+		<div class="push"></div>
+	</div>
+
+	<footer>
+		<div id="footer_text">&copy; Copyright 2017 Lexi Majoue</div>
+	</footer>
+</body>
+</html>
